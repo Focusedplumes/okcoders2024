@@ -1,0 +1,69 @@
+/* Learning Positions
+Two types One is Fixed 
+typically just deciding in one position with two of the sides to get something positioned
+The Other position is Absolute allows to position relative to another element*
+The other is position Sticky but not as fundamental*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav
+
+body {
+    margin-bottom: 120px;
+}
+
+.footer{
+    background-color: black;
+    height: 200px;
+    height:100px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    position: fixed; /*default position is set to static before being modified*/
+    
+}
+
+.font-white {
+    color:white;
+}
+
+/* just demo, didn't sign up for the font page to get icons*/
+
+.chat {
+    bottom: 120px;
+    position: fixed;
+}
+
+.chat-2{
+    bottom: 120px;
+    left: 2px;
+    right: 20px;
+    position: fixed;
+}
+
+/* Now to flexbox*/
+
+.nav {
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.container {
+    padding: 20px;
+}

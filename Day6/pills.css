@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    color: blue;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#pillrow {
+    /*background: rgb(105, 169, 190);
+    border: 1px rgb(105, 169, 190);
+    width: 50px;
+    padding: 20px;*/
+    background-color: red;
+}

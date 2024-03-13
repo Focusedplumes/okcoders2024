@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+.navbar {
+    height:50px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: flex-end;
+}
+
+#logo {
+    margin-right: auto;
+}
+
+a {
+    color:white;
+}
