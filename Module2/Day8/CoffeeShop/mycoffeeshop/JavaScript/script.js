@@ -61,7 +61,7 @@ function addToCart(item) {
 //Initializing the shopping cart array
 let shoppingCart = [
 
-]
+];
 // Function to display the shopping cart
 function displayShoppingCart(inShoppingCart) {
     console.log("shopping cart", inShoppingCart);
