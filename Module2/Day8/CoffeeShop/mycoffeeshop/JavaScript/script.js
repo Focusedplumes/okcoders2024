@@ -20,7 +20,7 @@ window.onload = function () {
 
 //Menu Array, Created Menu Listing with an Array 
 
-
+let shoppingCart = [];
 let menuItems = [
     {Name: 'Coffee', Description: 'Basic Coffee', Price: '$2.00'},
     {Name: 'Espresso', Description: 'Shot of Esspresso', Price: '$1.00'},
@@ -54,42 +54,28 @@ function displayMenuItems(items) {
 //Shopping Cart, Grabbing Data and Adding to Shopping Cart
 function addToCart(item) {
    shoppingCart.push(item); //add the item to he shopping cart
-   displayShoppingCart(shoppingCart);  //update the content of the shopping cart display
-//    console.log("Item added to cart:", item);
    console.log("Updated shopping cart", shoppingCart);
-}
-//Initializing the shopping cart array
-let shoppingCart = [
 
-];
+   displayShoppingCart();  //update the content of the shopping cart display
+//    console.log("Item added to cart:", item);
+   
+}
+
 // Function to display the shopping cart
 function displayShoppingCart(inShoppingCart) {
     console.log("shopping cart", inShoppingCart);
     
     // Get a reference to the shopping cart display element
-    let displayCartDiv = document.getElementById("shopping-cart");
-    // for (let i = 0; i < menuItems.length; i++){
+    let displayCartDiv = document.getElementById("shoppingCartItem");
     
-        // Clear previous content of the shopping cart display
       displayCartDiv.innerHTML = '';
-
-    // Iterate over each item in the shopping cart array
-      shoppingCart.forEach(function(item){
-      let cartItemDiv = document.createElement('div');
-      cartItemDiv.innerHTML += "<p>" + menuItems[i].Name + "<br>" + menuItems[i].Description + "<br>" + menuItems[i].Price + "</p>";  // Create a div element to represent each item
-    
+      for (let i = 0; i < shoppingCart.length; i++) {
+        let shoppingCartItemDiv = document.createElement('div');
+        
+        shoppingCartItemDiv.innerHTML += "<p>" + shoppingCart[i].Name + "<br>" + shoppingCart[i].Description + "<br>" + shoppingCart[i].Price + "</p>";
     // Append the item representation to the shopping cart display
-      displayCartDiv.appendChild(cartItemDiv);
+        displayCartDiv.appendChild(shoppingCartItemDiv);
     
-    
-
-     });
-    // }
-
-    
-
-    // displayMenuItems(); //needs to be called
- 
-
+      }
 }
 
